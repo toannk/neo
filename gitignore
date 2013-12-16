@@ -1,0 +1,9 @@
+### Magento ###
+app/etc/local.xml
+app/etc/local.xml.additional
+app/etc/local.xml.template
+media/
+var/
+
+### PhPStorm ###
+.idea/

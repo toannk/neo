@@ -1,0 +1,32 @@
+<div class="nav-container">
+    <div class="container1">
+        <div class="container2">
+            <ul id="menu">
+				<li class="home-link">
+					<a class="home" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>"><?php echo $this->__("Home") ?></a>
+				</li>
+                <?php //echo $this->drawCatalog(); ?>
+                <?php if (Mage::getStoreConfig('megamenu/allpages/enable')):  ?>
+                <?php $itemAlign = Mage::getStoreConfig('megamenu/allpages/itemalign');  ?>
+                <?php $contentAlign = Mage::getStoreConfig('megamenu/allpages/contentalign');  ?>
+                <?php $storeId  = Mage::app()->getStore()->getId();
+                      $storeUrl = Mage::getModel('core/store')->load($storeId)->getUrl();
+                      $storeUrl.='#';
+                ?>
+                <li class="drop menu_<?php echo $itemAlign;?> allcategories">
+                    <a href="<?php echo $storeUrl;?>" class="drop"><?php echo Mage::getStoreConfig('megamenu/allpages/title');?></a>
+                    <div class="dropdown_2column_simple align_<?php echo $contentAlign;?>">
+                        <div class="col_1">
+                            <ul class="simple">
+                            <?php echo $this->drawAllCategoriesMenu(); ?>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <?php endif; ?>
+
+                <?php echo $this->drawAdminMenu(); ?>
+            </ul>
+        </div>
+    </div>
+</div>

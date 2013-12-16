@@ -1,0 +1,18 @@
+<?php
+$categories = $this->getStoreCategories();
+?>
+<?php if ($categories) : ?>
+<div class="nav-sidebar">
+    <ul class="category-list">
+<?php foreach ($this->getStoreCategories() as $_category): ?>
+    <?php $open = $this->isCategoryActive($_category); ?>
+    <?php
+    $cur_category=Mage::getModel('catalog/category')->load($_category->getId());
+    $layer = Mage::getSingleton('catalog/layer');
+    $layer->setCurrentCategory($cur_category);
+    ?>
+    <li><a href="<?php echo $this->getCategoryUrl($_category)?>"><?php echo $_category->getName()?></a></li>
+<?php endforeach; ?>
+    </ul>
+</div>
+<?php endif; ?>

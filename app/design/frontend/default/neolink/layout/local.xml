@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * local.xml
+ *
+ * Local layout modifications for our local theme
+ *
+ * @category    design
+ * @package     default_neolink
+ * @copyright   Copyright (c) 2013 ToanNK.
+ */
+-->
+<layout version="0.1.0">
+    <!--
+    Default layout, loads most of the pages
+    -->
+    <default>
+        <reference name="head">
+            <block type="core/text" name="html5shiv">
+                <action method="setText">
+                    <text><![CDATA[<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->]]></text>
+                </action>
+            </block>
+
+            <action method="addJs"><script>jquery/jquery-1.8.2.min.js</script></action>
+            <action method="addJs"><script>jquery/jquery.noconflict.js</script></action>
+
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/easybanner/jquery.cycle.js</name>
+            </action>
+            <action method="addCss"><stylesheet>css/flexslider.css</stylesheet></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.flexslider-min.js</name></action>
+
+        </reference>
+
+        <reference name="footer">
+            <remove name="footer_links"/>
+        </reference>
+        <reference name="before_body_end">
+            <block type="page/html_head" name="extra_js" as="extraJs" after="-" template="page/html/footer/extras.phtml">
+                <action method="addItem"><type>skin_js</type><name>js/cf.js</name></action>
+            </block>
+        </reference>
+    </default>
+
+    <cms_page>
+        <reference name="content">
+            <action method="unsetChild">
+                <alias>cms.wrapper</alias>
+            </action>
+            <block type="cms/page" name="cms_page"/>
+        </reference>
+    </cms_page>
+
+</layout>

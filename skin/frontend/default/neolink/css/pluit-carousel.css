@@ -1,0 +1,131 @@
+/* Carousel */
+.pluit-carousel {
+  position: relative;
+ /*  margin-bottom: 6em; */
+}
+
+.pluit-carousel img {
+  border: 0;
+  display: block;
+  cursor: pointer;
+}
+
+.pluit-carousel ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Viewport */
+.pluit-carousel .viewport {
+  /* margin-bottom: 10px; */
+  overflow: hidden;
+  position: relative;
+}
+
+.pluit-carousel .viewport ul {
+  width: 6000px;
+}
+
+.pluit-carousel .viewport ul li {
+  display:inline-block;
+  /* float: left; */
+  width: auto !important;
+  padding: 0 !important; position:relative;width:230px;
+}
+.pluit-carousel .viewport ul li .item {width:230px;}
+.pluit-carousel .viewport ul li .item ul li {width:auto;}
+.pluit-carousel .viewport ul ul {
+  width: auto;
+  /* float: left; */text-align:center
+}
+
+.pluit-carousel .viewport ul ul li {
+  margin-right: 24px;border:1px solid #fff;position:relative;vertical-align:top;
+}
+.pluit-carousel .viewport ul ul li .options-product {visibility: hidden;}
+.pluit-carousel .viewport ul ul li:hover {border:1px solid #9b4169;border-radius:2px;-moz-box-shadow: 0 0 5px #d3abbd;-webkit-box-shadow: 0 0 5px #d3abbd;box-shadow: 0 0 5px #d3abbd;}
+.pluit-carousel .viewport ul ul li:hover .options-product {visibility: visible;}
+.pluit-carousel .viewport ul ul li.last {
+    margin-right: 0;
+}
+
+/* Navigation */
+.pluit-carousel .nav {
+  position: absolute;top:-11px;right:0px;
+ /*  padding: 0 3px;
+  height: 10px; */
+}
+
+.pluit-carousel .nav li a {
+  display: block;
+  overflow: hidden;
+  text-indent: -100em;
+  background: url(../images/carousel_nav.png) no-repeat 0 0;
+  outline: none;
+}
+
+.pluit-carousel .nav li a:hover {
+  background-position: -46px 0;
+}
+
+.pluit-carousel .nav .prev {
+  position: absolute;
+  right: 42px;
+}
+
+.pluit-carousel .nav .next {
+  position: absolute;
+  right: 0px;
+}
+.pluit-carousel .nav .prev a, .pluit-carousel .nav .next a { width: 42px; height: 42px;}
+.pluit-carousel .nav .prev a { background-position: 0px -153px;}
+
+.pluit-carousel .nav .prev a:hover {
+  background-position: 0px -195px;
+}
+
+.pluit-carousel .nav .next a {
+  background-position: -42px -153px;
+}
+
+.pluit-carousel .nav .next a:hover {
+  background-position: -42px -195px;
+}
+
+.pluit-carousel .nav .pages {
+  position: absolute;
+  top: 0px;
+  left: 2px;display:none;
+}
+
+.pluit-carousel .nav .pages ul {
+  float: left;
+}
+
+.pages li {
+  float: left;
+  margin-right: 8px;
+}
+
+.pluit-carousel .nav .pages li a {
+  width: 10px;
+  height: 10px;
+}
+
+.pluit-carousel .nav .pages li.active a {
+  background-position: -46px 0;
+}
+
+.pluit-carousel ul, .pluit-carousel .nav .pages, .pluit-carousel .nav {
+  zoom: 1;
+}
+
+.pluit-carousel ul:after, .pluit-carousel .nav .pages:after, .pluit-carousel .nav:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bestseller {margin-bottom:40px}
