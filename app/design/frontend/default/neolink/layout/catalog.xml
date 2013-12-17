@@ -165,6 +165,9 @@ Product view
         <reference name="root">
             <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
         </reference>
+        <reference name="left">
+            <block type="catalog/navigation" name="catalog.leftnav" after="currency" template="catalog/navigation/left_nav.phtml"/>
+        </reference>
         <reference name="head">
             <action method="addJs"><script>varien/product.js</script></action>
             <action method="addJs"><script>varien/configurable.js</script></action>
