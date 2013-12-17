@@ -10,7 +10,7 @@
         <currencyFormats>
             <currencyFormatLength>
                 <currencyFormat>
-                    <pattern>#.##0 ¤;(#.##0 ¤)</pattern>
+                    <pattern>#,##0.00 ¤;(#,##0.00 ¤)</pattern>
                 </currencyFormat>
             </currencyFormatLength>
             <unitPattern count="one">{0} {1}</unitPattern>

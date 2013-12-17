@@ -35,7 +35,52 @@
 <?php if($_menu): ?>
 <div class="nav-container">
     <ul id="nav">
-        <?php echo $_menu ?>
+
+        <li><a href="http://neolink.local/"><span>Home</span></a></li>
+
+        <li class="level0 nav-1 first level-top parent">
+            <a href="http://neolink.local/van-phong-pham.html" class="level-top"><span>Giới thiệu</span></a>
+            <ul class="level0">
+                <li class="level1 nav-1-1 first"><a href="http://neolink.local/van-phong-pham/giay-in-photo.html"><span>Thư ngỏ</span></a>
+                </li>
+                <li class="level1 nav-1-2"><a href="http://neolink.local/van-phong-pham/tong-hop.html"><span>Tổng quan về Công ty</span></a>
+                </li>
+                <li class="level1 nav-1-3"><a href="http://neolink.local/van-phong-pham/may-van-phong.html"><span>Sơ đồ tổ chức</span></a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="level0 nav-1 first level-top parent">
+            <a href="http://neolink.local/van-phong-pham.html" class="level-top"><span>Mô hình kinh doanh</span></a>
+            <ul class="level0">
+                <li class="level1 nav-1-1 first"><a href="http://neolink.local/van-phong-pham/giay-in-photo.html"><span>MRO là gì?</span></a>
+                </li>
+                <li class="level1 nav-1-2"><a href="http://neolink.local/van-phong-pham/tong-hop.html"><span>Mô hình vận hành</span></a>
+                </li>
+                <li class="level1 nav-1-3"><a href="http://neolink.local/van-phong-pham/may-van-phong.html"><span>Tổng quan về Mô hình kinh doanh</span></a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="level0 nav-1 first level-top parent">
+            <a href="http://neolink.local/van-phong-pham.html" class="level-top"><span>Sản phẩm</span></a>
+            <ul class="level0">
+                <?php echo $_menu ?>
+            </ul>
+        </li>
+
+        <li class="level0 nav-1 first level-top parent">
+            <a href="http://neolink.local/van-phong-pham.html" class="level-top"><span>Đối tác</span></a>
+            <ul class="level0">
+                <li class="level1 nav-1-1 first"><a href="http://neolink.local/van-phong-pham/giay-in-photo.html"><span>Nhà cung cấp</span></a>
+                </li>
+                <li class="level1 nav-1-2"><a href="http://neolink.local/van-phong-pham/tong-hop.html"><span>Khách hàng</span></a>
+                </li>
+            </ul>
+        </li>
+
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQS</a></li>
     </ul>
 </div>
 <?php endif ?>
