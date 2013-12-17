@@ -1,4 +1,9 @@
 .idea/
 var/
-media/
+media/customer/
+media/downloadable/
+media/.htaccess
+media/import/
+media/xmlconnect/
+media/catalog/product/cache/
 app/etc/local.xml
