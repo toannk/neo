@@ -36,22 +36,22 @@
 <div class="nav-container">
     <ul id="nav">
 
-        <li><a href="http://neolink.local/"><span>Home</span></a></li>
+        <li class="level0 <?php if (strpos(Mage::helper('core/url')->getCurrentUrl(),'') != false ) :?> active<?php endif;?>"><a href="<?php echo $this->getUrl('')?>"><span><?php echo $this->__('Home') ?></span></a></li>
 
         <li class="level0 nav-1 first level-top parent">
-            <a href="http://neolink.local/van-phong-pham.html" class="level-top"><span>Giới thiệu</span></a>
+            <a href="<?php echo $this->getUrl('about-us')?>" class="level-top"><span>Giới thiệu</span></a>
             <ul class="level0">
-                <li class="level1 nav-1-1 first"><a href="http://neolink.local/van-phong-pham/giay-in-photo.html"><span>Thư ngỏ</span></a>
+                <li class="level1 nav-1-1 first"><a href="<?php echo $this->getUrl('thu-ngo')?>"><span>Thư ngỏ</span></a>
                 </li>
-                <li class="level1 nav-1-2"><a href="http://neolink.local/van-phong-pham/tong-hop.html"><span>Tổng quan về Công ty</span></a>
+                <li class="level1 nav-1-2"><a href="<?php echo $this->getUrl('tong-quan')?>"><span>Tổng quan về Công ty</span></a>
                 </li>
-                <li class="level1 nav-1-3"><a href="http://neolink.local/van-phong-pham/may-van-phong.html"><span>Sơ đồ tổ chức</span></a>
+                <li class="level1 nav-1-3"><a href="<?php echo $this->getUrl('so-do-to-chuc')?>"><span>Sơ đồ tổ chức</span></a>
                 </li>
             </ul>
         </li>
 
         <li class="level0 nav-1 first level-top parent">
-            <a href="http://neolink.local/van-phong-pham.html" class="level-top"><span>Mô hình kinh doanh</span></a>
+            <a href="<?php echo $this->getUrl('mo-hinh-kinh-doanh')?>" class="level-top"><span>Mô hình kinh doanh</span></a>
             <ul class="level0">
                 <li class="level1 nav-1-1 first"><a href="http://neolink.local/van-phong-pham/giay-in-photo.html"><span>MRO là gì?</span></a>
                 </li>
