@@ -148,6 +148,23 @@ button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; }
 button.button span { /*float:left; height:21px; background:transparent url(../images/bkg_button.gif) 0 0 no-repeat; padding:0 0 0 8px; font:bold 12px/21px Arial, Helvetica, sans-serif; text-align:center; white-space:nowrap; color:#fff;*/ }
 button.button span span { /*background-position:100% 0; padding:0 12px 0 4px;*/ }
+button.button span span {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    line-height:18px;
+    text-transform:none;
+    color:#fff;
+    font-weight:700;
+    text-decoration:none!important;
+    background:url(../images/btn1.png) repeat-x 0 0 #74b602;
+    border-width:1px 1px 1px 1px;
+    border-style:solid;
+    border-color:#83ce03 #5b8f02 #5b8f02 #7cc303;
+    display:inline-block;
+    padding:5px 8px 9px 6px;
+    cursor:pointer!important;
+    margin:0 2px 0 1px;
+}
 button.disabled {}
 button.disabled span {}
 
@@ -1558,7 +1575,7 @@ h2.category-name {color:#75b802; text-transform:uppercase; font-family: 'Open Sa
 a span{
     width:auto!important;
 }
-.cssButton:hover,
+/*.cssButton:hover,
 .btn-cart:hover,
 .cssButtonHover {
     font-family:Arial, Helvetica, sans-serif;
@@ -1599,7 +1616,7 @@ a span{
     padding:0 !important;
     margin:0 !important;
     text-indent:-10000px;
-}
+}*/
 
 
 .navNextPrevWrapper a,
