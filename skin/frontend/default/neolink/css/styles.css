@@ -1555,7 +1555,7 @@ div.top-cart .block-content ol li {
 h2.category-name {color:#75b802; text-transform:uppercase; font-family: 'Open Sans', sans-serif; font-size:24px; line-height:24px; font-weight:700; padding:0 0 17px 0px; margin:-5px 0 10px; border-bottom:1px solid #e5e3e3;}
 
 /* css buttons */
-.cssButton, .cssButtonHover, button.btn-cart {
+/*.cssButton, .cssButtonHover, button.btn-cart {
     font-family:Arial, Helvetica, sans-serif;
     font-size:13px;
     line-height:18px;
@@ -1571,7 +1571,7 @@ h2.category-name {color:#75b802; text-transform:uppercase; font-family: 'Open Sa
     padding:5px 8px 9px 6px;
     cursor:pointer!important;
     margin:0 2px 0 1px;
-}
+}*/
 a span{
     width:auto!important;
 }
