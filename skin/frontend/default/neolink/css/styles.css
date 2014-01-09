@@ -1678,3 +1678,6 @@ a span{
 .nav-sidebar ul li .category-subs-selected,
 .nav-sidebar ul li.current > a,
 .nav-sidebar ul li a:hover {color:#73b502;}
+
+.product-featured-slider {margin-bottom: 20px}
+.product-featured-slider:last-child {margin-bottom: 0 !important}
