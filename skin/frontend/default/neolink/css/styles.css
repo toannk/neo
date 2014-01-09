@@ -493,7 +493,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .header-search-form {float: right}
 .header-search-form label {display: none}
 .header-search-form .input-text { float:left; width:152px; padding:0 10px; margin:0; border:1px solid #d3d3d3; border-right:none; background:#fff; height:32px; line-height:32px;}
-.header .nav-container {background:url(../images/menu-bg.png) repeat-x 0 0; position:absolute; top:94px; right:0; height:49px; width:763px;}
+.header .nav-container {background:url(../images/menu-bg.png) repeat-x 0 0; position:absolute; top:94px; right:0; width:763px;}
 
 /* Mini cart ---*/
 div.mini-cart-layer {
@@ -660,7 +660,7 @@ div.top-cart .block-content ol li {
 /********** < Navigation */
 .nav-container {}
 #nav {
-    padding: 14px 0 0 22px;
+    padding: 0 0 0 22px;
     margin: 0;
     /*overflow: hidden;*/
 }
@@ -669,7 +669,8 @@ div.top-cart .block-content ol li {
 #nav li {
     float: left;
     margin-right: 22px;
-    text-align:left; position:relative; }
+    text-align:left; position:relative; 
+}
 #nav li.over { z-index:998; }
 #nav li.parent {}
 #nav li a { display:block; text-decoration:none; }
@@ -686,6 +687,7 @@ div.top-cart .block-content ol li {
     font-size: 14px;
     line-height: 18px;
     font-family: 'Open Sans', sans-serif;
+	padding: 15px 0 14px 0;
 }
 #nav li a:hover { color:#75b802; }
 #nav li.over a,
@@ -693,7 +695,7 @@ div.top-cart .block-content ol li {
 
 /* 2nd Level */
 #nav ul,
-#nav div { position:absolute; width:15em; top:25px; left:-10000px; border:1px solid #ddd; background:#fafafa; }
+#nav div { position:absolute; width:20em; top:45px; left:-10000px; border:1px solid #ddd; background:#fafafa; }
 #nav div ul { position:static; width:auto; border:none; }
 
 /* 3rd+ leven */
@@ -702,7 +704,8 @@ div.top-cart .block-content ol li {
 
 #nav ul li { float:none; border-bottom:1px solid #ddd; margin-right: 0 !important }
 #nav ul li.last { border-bottom:0; }
-#nav ul li a { float:none; padding:3px 9px; font-weight:normal; color:#333 !important; }
+#nav ul li a { float:none; padding:8px 10px; font-weight:normal; color:#333 !important; }
+#nav ul li.nav-4 a { background:url(../images/hit.gif) no-repeat scroll right center; }
 #nav ul li a:hover { color:#75b802 !important; }
 #nav ul li.active > a { color:#000 !important; }
 
