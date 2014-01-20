@@ -305,6 +305,7 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .breadcrumbs { margin:0 0 10px; }
 .breadcrumbs li { display:inline; }
 .breadcrumbs li a { color: #75b802 }
+.catalog-product-view .breadcrumbs {background: #fff none; padding-bottom: 10px}
 
 /* Page Heading */
 .page-title { /*border-bottom:1px solid #ddd; padding:0 0 5px; margin:0 0 10px;*/ }
