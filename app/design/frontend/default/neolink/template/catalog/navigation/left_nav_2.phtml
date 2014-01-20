@@ -1,0 +1,47 @@
+<div class="nav-sidebar">
+    <ul class="category-list">
+        <?php
+        $_categories=$this->getCurrentChildCategories();
+        if($_categories->count()):
+            $categorycount = 0;
+            foreach ($_categories as $_category):
+                if($_category->getIsActive()):
+                    $cur_category=Mage::getModel('catalog/category')->load($_category->getId());
+                    $layer = Mage::getSingleton('catalog/layer');
+                    $layer->setCurrentCategory($cur_category);
+                    $catName = $this->getCurrentCategory()->getName();
+                    if ($categorycount == 0){
+                        $class = "first";
+                    }
+                    elseif ($categorycount == $_categories->count()){
+                        $class = "last";
+                    }
+                    else{
+                        $class = "";
+                    }
+                    ?>
+                    <li class="item <?=$class?>">
+                        <a href="<?php echo $_category->getURL() ?>" title="<?php echo $this->htmlEscape($_category->getName()) ?>"><?php echo $this->htmlEscape($_category->getName()) ?></a>
+                    </li>
+                <?php
+                endif;
+            endforeach;
+        else: //List all categories same level
+            $currentCat = Mage::registry('current_category');
+            $loadCategory = Mage::getModel('catalog/category')->load($currentCat->getParentId());
+            $subCategories = explode(',', $loadCategory->getChildren());
+        ?>
+
+            <?php foreach ( $subCategories as $subCategoryId ): ?>
+            <?php $cat = Mage::getModel('catalog/category')->load($subCategoryId); ?>
+            <?php if($cat->getIsActive()): ?>
+                <?php //echo '<a href="'.$cat->getURL().'">'.$cat->getName().'</a>'; ?>
+                <li<?php if($cat->getId()==$currentCat->getId()) echo ' class="current"' ?>><a href="<?php echo $cat->getURL() ?>"><?php echo $cat->getName() ?></a></li>
+            <?php endif; ?>
+            <?php endforeach; ?>
+
+        <?php
+        endif;
+        ?>
+    </ul>
+</div>
