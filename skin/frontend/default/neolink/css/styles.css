@@ -1494,7 +1494,7 @@ div.top-cart .block-content ol li {
 }
 
 .product-featured-slider ul.products-list {list-style: none}
-.product-featured-slider ul.products-list li {border: none !important;float: left;width: 240px;padding: 0 11px !important}
+.product-featured-slider ul.products-list li {border: none !important;float: left;width: 240px;padding: 0 7px 10px !important}
 .product-featured-slider ul.products-list li.last-row {margin-right: 0 !important;}
 .product-featured-slider .products-list .product-image {float: none;display:block;width: auto;height: auto;text-align: center}
 .product-featured-slider .products-list .price-box {border-bottom:1px solid #e5e3e3; padding-bottom:16px; margin: 0 0 16px 0 !important;float: none}
