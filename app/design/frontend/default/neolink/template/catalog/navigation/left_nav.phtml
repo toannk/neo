@@ -1,24 +1,15 @@
 <?php
 $currentCat = Mage::registry('current_category');
 
-$_categoryChildren =  Mage::getModel('catalog/category')->load($currentCat->getId())->getChildren();
-
-var_dump($_categoryChildren);
-
-if ($_categoryChildren) {
-    
-}
-
-/*if ( $currentCat->getParentId() == Mage::app()->getStore()->getRootCategoryId() ) {
+if ( $currentCat->getParentId() == Mage::app()->getStore()->getRootCategoryId() ) {
     // current category is a toplevel category
     $loadCategory = $currentCat;
 } else {
     // current category is a sub-(or subsub-, etc...)category of a toplevel category
     // load the parent category of the current category
     $loadCategory = Mage::getModel('catalog/category')->load($currentCat->getParentId());
-}*/
+}
 $subCategories = explode(',', $loadCategory->getChildren());
-var_dump($subCategories);
 ?>
 <?php if($subCategories): ?>
     <div class="nav-sidebar">
