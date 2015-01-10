@@ -60,7 +60,7 @@ Category default layout
             <remove name="breadcrumbs" />
         </reference>
         <reference name="left">
-            <block type="catalog/navigation" name="catalog.leftnav" after="currency" template="catalog/navigation/left_nav.phtml"/>
+            <block type="catalog/navigation" name="catalog.leftnav" after="currency" template="catalog/navigation/left_nav_2.phtml"/>
         </reference>
         <reference name="content">
             <block type="catalog/category_view" name="category.products" template="catalog/category/view.phtml">
